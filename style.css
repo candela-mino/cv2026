@@ -1,0 +1,110 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "WorkSans Black";
+    src: url(fuentes/WorkSans-Black.ttf) format(truetype);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DuruSans Regular";
+    src: url(fuentes/DuruSans-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik SemiBold Italic";
+    src: url(fuentes/Rubik-SemiBoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Rubik SemiBold";
+    src: url(fuentes/Rubik-SemiBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*aca empiezan las aplicaciones*/
+
+* {
+    font-family: "DuruSans Regular", sans-serif;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(200, 200, 200);
+    color: rgb(30, 30, 30);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: rgb(181, 181, 181);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+section {
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'WorkSans Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10rem;
+    line-height: 0rem;
+}
+
+h2 {
+    font-family: 'Rubik SemiBold Italic', 'Arial Narrow', Arial, sans-serif;
+    margin: 2.5rem;
+    font-size: larger;
+    line-height: 5.5rem;
+}
+
+h3 {
+    padding: 2rem;
+    font-family: 'Rubik SemiBold', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.7rem;
+}
+
+#intro {
+    height: 30vh;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#presentation {
+    line-height: 5rem;
+}
+
+#works {
+    display: flex;
+    justify-content: center;
+}

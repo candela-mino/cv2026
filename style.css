@@ -32,18 +32,18 @@
 /*aca empiezan las aplicaciones*/
 
 * {
-    font-family: "DuruSans Regular", sans-serif;
+font-family: "DuruSans Regular", sans-serif;
+    font-size: small;
     text-align: center;
-    list-style: none;
     text-decoration: none;
-    color: rgb(226, 226, 226);
+    color: rgb(218, 234, 237);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(0, 70, 200);
 }
 
 header {
@@ -58,7 +58,8 @@ nav {
     display: flex;
     gap: 40px;
     font-size: 0.9rem;
-}
+    align-items: center;
+    }
 
 main {
     display: flex;
@@ -75,20 +76,67 @@ section {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    max-width: 1000px;
+    max-width: 1450px;
 }
 
 .boton {
-    padding: 0px 20px;
+    display: flex;
+    max-height: 45px;
+    padding: 10px 20px;
     border-radius: 25px;
     border: 1px solid #f9f0f3;
     background: transparent;
     cursor: pointer;
+    align-items: center;
+}
 
+.gustos {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.carrusel {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 80px 0px;
+}
+
+.grid-container {
+    gap: 25px;
+    width: 1400px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 700px 50%;
+}
+
+.grid-item {
+    font-size: 2.5em;
+    display: flex;
+    width: 700px;
+    height: 400px;
+    font-family: Rubik SemiBold;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a {
+    background-image: url(img/hover-2-a.jpg);
+}
+
+.b {
+    background-image: url(img/hover-1-a.jpg);
+}
+
+.c {
+    background-image: url(img/hover-3-a.jpg);
+}
+
+.d {background-image: url(img/hover-4-a.jpg);
 }
 
 h1 {
-    color: rgb(226, 226, 226);
     line-height: 1;
     font-family: 'WorkSans Black', 'Arial Narrow', Arial, sans-serif;
     font-size: 10.5rem;
@@ -96,19 +144,22 @@ h1 {
 
 h2 {
     font-family: 'Rubik SemiBold Italic', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(30, 30, 30);
     font-size: larger;
     line-height: 0rem;
 }
 
 h3 {
+    font-size: large;
+    padding: 10px 0px;
     font-family: 'Rubik SemiBold', 'Arial Narrow', Arial, sans-serif;
-    max-width: 300px;
+    text-align: left;
 }
 
 h4 {
     font-family: 'Rubik SemiBold', 'Arial Narrow', Arial, sans-serif;
-    max-width: 300px;
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: left;
 
 }
 
@@ -119,19 +170,14 @@ p {
 }
 
 #intro {
-    background-image: url(img/bannermoskauno.png);
-    background-position: center;
-    background-size: cover;
-    height: 58vh;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 #presentation {
-    background-image: url(img/bannermoskados.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,38 +189,44 @@ p {
     gap: 150px;
 }
 
-#works {
+#quien {
+    max-width: 1450px;
     display: flex;
-    padding: 35px 50px 50px 50px;
+    width: 100vw;
     flex-direction: row;
     justify-content: center;
-    gap: 60px;
+    align-items: flex-start;
 }
 
-#hability {
-    height: 160px;
-    background-color: rgb(73, 76, 255);
-    padding: 0px 450px 0px 295px;
+#works {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-article {
-    gap: 25px;
-    display: flex;
+    padding: 35px;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+}
+
+
+
+#cv {
+    padding: 0px 450px 0px 295px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about {}
+
+article {
+    padding: 10px 0px;
+
 }
 
 footer {
-    width: 100vw;
-    font-size: 0.9rem;
-    padding: 40px 60px;
+    line-height: 6vh;
     display: flex;
     justify-content: center;
-    gap: 150px;
+    height: 10vh;
+    padding: 15px;
 }
 
 ul {
@@ -191,6 +243,20 @@ li {
     align-items: center;
 }
 
-.footer-section {
-    line-height: 1.8rem;
+.volver {
+    padding: 10px;
 }
+
+.grid-imagenes {
+    gap: 15px;
+    grid-template: auto / repeat(2, 0fr);
+    display: grid;
+    justify-content: center;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {}

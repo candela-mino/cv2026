@@ -15,47 +15,80 @@
 <body>
     <header id="cabecera">
         <div class="contenedor">
-            <img src="img/logo.png" alt="Icono de espiral" width="40" height="36">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Icono de espiral" width="40" height="36">
+            </a>
             <nav class="botonera">
                 <a href="about.html">About</a>
                 <a href="work.html">Work</a>
-                <a href="contact.html" class="boton">Contact</a>
+                <a href="contact.html" class="boton2">Contact</a>
             </nav>
         </div>
     </header>
-    
-    <main>
-        
-    <main>
-        <section id="contacto">
-            <div id="formulario">
-                <h4>Trabajemos juntos!</h4>
-                <form method="post" action="" target="_blank" enctype="text/plain">
 
-                    <label for="nombre" class="etiquetas-form">Tu nombre o apodo:</label>
-                    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Marquitos1997" required>
-                    <label for="email" class="etiquetas-form">E-mail:</label>
-                    <input type="email" name="email" id="email" maxlength="100" placeholder="hola@gmail.com" required>
-                    <h3>¿Qué servicio te gustaría?</h3>
-                    <div id="checks">
-                        <label><input type="checkbox" name="servicio" value="Ilustracion" id="Ilustración">Ilustración</label>
-                        <label><input type="checkbox" name="servicio" value="pintura" id="pintura">Pintura</label>
-                        <label><input type="checkbox" name="servicio" value="fotografía" id="fotografia">Fotografía</label>
-                        <label><input type="checkbox" name="servicio" value="milanesas" id="diseño">Diseño</label>
-                    <label for="mensaje" class="etiquetas-form">Mensaje*</label>
-                    <textarea name="Contame un poco tu idea:" id="mensaje" placeholder="Me interesaría una pintura de una manzana azul..."
-                        required></textarea>
-                    <div id="enviar">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+    <main>
+        <!-- Textos superiores + teléfono colgante -->
+        <section id="hero-contact">
+            <img src="img/telefono-rosa.png" alt="" class="telefono-colgante">
+
+            <div>
+                <h1 class="texto uno">¿Querés</h1>
+                <h1 class="texto dos">CREAR</h1>
+                <h1 class="texto tres">IDEAS</h1>
+                <h1 class="texto cuatro">juntxs?</h1>
             </div>
+
         </section>
-    </main>
+
+        <!-- Texto izquierda + formulario derecha -->
+        <section id="contact-content">
+            <div class="texto-contacto">
+                <h3>
+                    Escribí un mensaje contándome tu idea o hablame por mis redes:
+                </h3>
+            </div>
+
+            <form>
+                <label for="nombre" class="etiquetas-form">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre o apodo" required>
+                <label for="email" class="etiquetas-form">Email:</label>
+                <input type="email" name="email" id="email" maxlength="100" placeholder="your@email.com" required>
+                <label>Servicio:</label>
+                <div class="checks">
+                    <input type="checkbox">
+                    <span>Diseño</span>
+                    <input type="checkbox">
+                    <span>Fotografía</span>
+                    <input type="checkbox">
+                    <span>Pintura</span>
+                    <input type="checkbox">
+                    <span>Ilustración</span>
+                </div>
+                <label>Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Acá escribís tu mensaje..." required></textarea>
+                <button>ENVIAR</button>
+            </form>
+        </section>
+
+        <!-- Teléfono inferior decorativo -->
+        <section id="phone-bottom">
+            <img src="img/telefonoentero-rosa.png" alt="teléfono antiguo rosa" class="telefono-abajo">
+        </section>
+
     </main>
 
     <footer>
-    </footer>
+    <div class="contenedor">
+        <h2>Seguime en mis redes!</h2>
+        <div class="footer-section">
+            <a href="https://www.instagram.com/mossska_of/">
+                <img src="img/instagram-logo.png" alt="Logo de Instagram pixelado" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/candela-miño-402829404">
+                <img src="img/linkedin-logo.png" alt="Logo de LinkedIn pixelado" width="50" height="50">
+            </a>
+        </div>
+        </footer>
 
 
 </body>
